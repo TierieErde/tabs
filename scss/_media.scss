@@ -1,0 +1,120 @@
+@media (max-width:600px) {
+    .tabs{
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .tabs__tail.active{
+        border-radius:20px;
+        background: #FFFFFF;
+    }
+    .tabs__tail {
+        display: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: #FFFFFF;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .tabs__top{
+        
+        flex-direction: column;
+    }
+    .tabs__container{
+        padding: 20px;
+        margin-right: 40px;
+        // border-radius: 20px;
+        background: #F4F4F4;
+    }
+    .tabs__blocks{
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        background:#FFFFFF;
+        margin-top: 40px;
+        overflow: hidden;
+        display: block;
+        height: 70px;
+    }
+    .tabs__blocks.active{
+        height: 100%;
+    }
+    .tabs__block__descr{
+        width: 100%;
+        flex-direction: column;
+        img{
+            width: 100%;
+            transform: none;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    .tabs__block__text{
+        margin-right: 20px;
+        p{font-size: 14px;}
+        h1{
+            font-size: 24px;  
+        }
+    }
+    .tabs__blocks hr{
+        width: 100%;
+    }
+    .tabs__blocks{
+        width: 100%;
+    }
+    .tabs__block__chars{
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .tabs__block__chars__grid{
+        grid-template-columns: repeat(1, minmax(80px, auto));
+    }
+    .tabs__block__chars__input{
+        flex-direction: column;
+        width: 100%;
+        margin-right: 50px;
+    }
+    .tabs__block__chars__input input {
+        font-size: 14px;
+        width: 89%;
+        line-height: 30px;
+        padding: 15px;
+        margin-bottom: 15px;
+        margin-right: 50px;
+        height: 52px;
+    }
+    .char_btn{
+        font-size: 14px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .tabs__block__conf{
+        margin: 0;
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    .mobileTail__mountain {
+        color:  #0C0C0C;
+        display: flex;
+        margin-top: 10px;
+    }
+    .mobileTail__mountain.active{
+        color: #3922C5;
+    }
+    .mobileTail__mountain__decsr {
+        display: flex;
+    }
+    // .mobileTail__mountain__decsr.active{
+    //     color: #3922C5;
+    // }
+    .tabs__block__descr{
+        img {
+            margin-top: 10px;
+        }
+    }
+}
+    
