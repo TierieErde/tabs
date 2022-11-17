@@ -11,12 +11,12 @@
 
     <div class="tabs">
         <div class="tabs__top">
-            <div data-id="MounteinB" data-actab-group="0" data-actab-id="0" class="tabs__tail active">Горный велосипед</div>
-            <div data-id="Fem" data-actab-group="0" data-actab-id="1" class="tabs__tail">Женский велосипед</div>
+            <div data-id="MounteinB" id="deskt" data-actab-group="0" data-actab-id="0" class="tabs__tail active">Горный велосипед</div>
+            <div data-id="Fem" id="deskt"  data-actab-group="0" data-actab-id="1" class="tabs__tail">Женский велосипед</div>
         </div>
         <div class="tabs__container">
             <div id="MounteinB" data-actab-group="0" data-actab-id="0" class="tabs__blocks active">
-                <div data-id="MounteinB" data-actab-group="0" data-actab-id="0" class="mobileTail__mountain__decsr active">
+                <div data-id="MounteinB" id="mobl" data-actab-group="0" data-actab-id="0" class="tabs__tail active">
                     Горный велосипед <img data-id="MounteinB"  src="img/chevron-up.svg" alt="">
                 </div>
                 <div class="tabs__block__descr">
@@ -54,7 +54,7 @@
             </div>
             
             <div id="Fem" data-actab-group="0" data-actab-id="1" class="tabs__blocks">
-                <div data-id="Fem" data-actab-group="0" data-actab-id="1" class="mobileTail__mountain__decsr">
+                <div data-id="Fem" id="mobl"  data-actab-group="0" data-actab-id="1" class="tabs__tail">
                     Женский велосипед <img  data-id="Fem" src="img/chevron-up.svg" alt="">
                 </div>
 
@@ -81,7 +81,7 @@
                         Добавить характеристику
                     </div>
                     <form  action="#"  class="tabs__block__chars__input">
-                        <input required name="char" placeholder="Алюминивый сплав" id="char" type="text" minlength="4">
+                        <input required name="char" placeholder="Алюминивый сплав" id="char" type="textarea" minlength="4">
                         <button class="char_btn">Добавить</button>
                     </form>
 

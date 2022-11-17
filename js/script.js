@@ -1,32 +1,7 @@
 'use strict'; 
-// const tabs = document.querySelector(".tabs");
-// const tab=document.querySelectorAll('.tabs__blocks')
-// const tails=document.querySelectorAll('.tabs__tail')
-// const mobileBtn=document.querySelectorAll('.mobileTail__mountain')
-// tabs.onclick = e => {
-//     const id = e.target.dataset.id;
-//     if (id) {
-     
-//         tails.forEach(btn => {
-//         btn.classList.remove("active");
-//       });
-      
-//       e.target.classList.add("active");
-  
-//       tab.forEach(content => {
-//         content.classList.remove("active");
-//       });
-//       mobileBtn.forEach(content => {
-//         content.classList.remove("active");
-//       });
 
-//       const element = document.getElementById(id);
-//       element.classList.add("active");
-//     }
-  
-//   }
 
-const labels = document.querySelectorAll(".mobileTail__mountain__decsr");
+const labels = document.querySelectorAll(".tabs__tail");
 const tabs = document.querySelectorAll(".tabs__tail");
 
 function toggleShow() {
@@ -44,9 +19,8 @@ function toggleShow() {
 			} else {
 				tab.classList.remove("active");       
 			}
-		};    
+		}
 	});
-
 	labels.forEach(function(label) {
 		const tabItem = label.parentElement;
 
@@ -58,16 +32,14 @@ function toggleShow() {
 				tabItem.classList.remove("active");
         
 			}
-		};
+		}
 
-    labels.forEach((label) => {
-      label.addEventListener('click', () => {
-          removeActiveClasses()
-          label.classList.add('active')
-      })
-  })
+
 });
 }
+
+ 
+
 
 
 labels.forEach(function(label) {
@@ -77,9 +49,3 @@ labels.forEach(function(label) {
 tabs.forEach(function(tab) {
 	tab.addEventListener("click", toggleShow);
 });
-
-function removeActiveClasses() {
-  labels.forEach(label => {
-    label.classList.remove('active')
-  })
-}

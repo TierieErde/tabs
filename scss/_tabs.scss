@@ -1,5 +1,5 @@
 .tabs {
-    position: absolute;
+    position: relative;
     width: 846px;
     min-height: 845px;
     margin-left: 102px;
@@ -18,6 +18,9 @@
         
     }
     &__tail {
+        // top: -73px;
+        // left: 0px;
+        // position: absolute;
         background: #D9D9D9;
         padding: 20px 24px 20px 24px;
         border-radius: 20px 20px 0px 0px;
@@ -31,6 +34,8 @@
             background: #FFFFFF;
             cursor:default;
         }
+        
+        
     }
     &__blocks {
         display: none;
@@ -40,7 +45,7 @@
             display:block;
         }
         hr{
-            width: 726px;
+            width: auto;
             margin: 0 auto;
         }
     }
@@ -57,14 +62,13 @@
                 
                 height: 100%;
                 transform: translateX(-100px) translateY(12px)  scale(1.2);
-                // height : 232px; 
+               
             }
         }
         &__text{
             
             max-width: 425px;
-            // margin-left: 71px;
-            // margin-right: 60px;
+           
             h1{
                 font-weight: 700;
                 font-size: 26px;
@@ -212,6 +216,15 @@
                 transform: rotate(0deg);
             }
         }
+    img{
+        margin-top: 5px;
+        position: absolute;
+        right: 0px;
+        transform: rotate(180deg);
+    }
+}
+#mobl {
+    display: none;
     img{
         margin-top: 5px;
         position: absolute;
