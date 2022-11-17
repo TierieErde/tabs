@@ -1,4 +1,4 @@
-@media (max-width:600px) {
+@media (max-width:800px) {
     .tabs{
         width: 100%;
         overflow: hidden;
@@ -8,9 +8,16 @@
     .tabs__tail.active{
         border-radius:20px;
         background: #FFFFFF;
+        
+    }
+    .tabs__tail.active img{
+            margin-top: 5px;
+            position: absolute;
+            right: 0px;
+            transform: rotate(0deg);
+            
     }
     .tabs__tail {
-        // display: none;
         position: relative;
         padding-top: 10px;
         width: 75vw;
@@ -19,7 +26,13 @@
         font-size: 20px;
         line-height: 150%;
         padding-left: 0;
+        img{
+            margin-top: 5px;
+            position: absolute;
+            right: 0px;
+            transform: rotate(180deg);
     }
+}
     #deskt{
         display: none;
     }
@@ -108,7 +121,6 @@
         line-height: 30px;
         padding: 15px;
         margin-bottom: 15px;
-        // margin-right: 170px;
         height: 52px;
     }
     .char_btn{

@@ -1,6 +1,5 @@
 'use strict'; 
 
-
 const labels = document.querySelectorAll(".tabs__tail");
 const tabs = document.querySelectorAll(".tabs__tail");
 
@@ -33,8 +32,6 @@ function toggleShow() {
         
 			}
 		}
-
-
 });
 }
 
